@@ -16,7 +16,6 @@ struct Pokemon: Codable {
         
         let imgUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
         
-        
         return imgUrl + idGetter() + ".png"
     
     }
@@ -50,6 +49,7 @@ struct Pokemon: Codable {
             }
             
         }
+        
         return String(id.reversed())
     }
 }
