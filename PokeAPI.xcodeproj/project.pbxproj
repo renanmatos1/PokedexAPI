@@ -19,7 +19,9 @@
 		416339142931346B00BE307A /* PokemonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416339132931346B00BE307A /* PokemonsTableViewCell.swift */; };
 		41D1CE1F293516C70035092D /* DetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D1CE1E293516C70035092D /* DetailScreen.storyboard */; };
 		41D1CE21293516F40035092D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1CE20293516F40035092D /* DetailViewController.swift */; };
-		41D1CE23293523600035092D /* extensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1CE222935235F0035092D /* extensionDelegate.swift */; };
+		41D1CE2729352A610035092D /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1CE2629352A610035092D /* Stats.swift */; };
+		41D1CE29293534310035092D /* StatsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1CE28293534310035092D /* StatsData.swift */; };
+		41D1CE2B293539FA0035092D /* pokemonStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1CE2A293539FA0035092D /* pokemonStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,9 @@
 		416339132931346B00BE307A /* PokemonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsTableViewCell.swift; sourceTree = "<group>"; };
 		41D1CE1E293516C70035092D /* DetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailScreen.storyboard; sourceTree = "<group>"; };
 		41D1CE20293516F40035092D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		41D1CE222935235F0035092D /* extensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDelegate.swift; sourceTree = "<group>"; };
+		41D1CE2629352A610035092D /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		41D1CE28293534310035092D /* StatsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsData.swift; sourceTree = "<group>"; };
+		41D1CE2A293539FA0035092D /* pokemonStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,9 @@
 			children = (
 				4163390C2931290600BE307A /* PokemonJson.swift */,
 				4163390A2931267300BE307A /* Pokemon.swift */,
+				41D1CE2629352A610035092D /* Stats.swift */,
+				41D1CE28293534310035092D /* StatsData.swift */,
+				41D1CE2A293539FA0035092D /* pokemonStats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,7 +112,6 @@
 			children = (
 				416338F82931259300BE307A /* HomeViewController.swift */,
 				4163390E29312F0A00BE307A /* extensionDataSource.swift */,
-				41D1CE222935235F0035092D /* extensionDelegate.swift */,
 				416339132931346B00BE307A /* PokemonsTableViewCell.swift */,
 				41D1CE20293516F40035092D /* DetailViewController.swift */,
 			);
@@ -185,12 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4163390D2931290600BE307A /* PokemonJson.swift in Sources */,
+				41D1CE2B293539FA0035092D /* pokemonStats.swift in Sources */,
+				41D1CE2729352A610035092D /* Stats.swift in Sources */,
 				4163390B2931267300BE307A /* Pokemon.swift in Sources */,
 				416339142931346B00BE307A /* PokemonsTableViewCell.swift in Sources */,
 				4163390F29312F0A00BE307A /* extensionDataSource.swift in Sources */,
-				41D1CE23293523600035092D /* extensionDelegate.swift in Sources */,
 				416338F92931259300BE307A /* HomeViewController.swift in Sources */,
 				416338F52931259300BE307A /* AppDelegate.swift in Sources */,
+				41D1CE29293534310035092D /* StatsData.swift in Sources */,
 				416338F72931259300BE307A /* SceneDelegate.swift in Sources */,
 				41D1CE21293516F40035092D /* DetailViewController.swift in Sources */,
 			);

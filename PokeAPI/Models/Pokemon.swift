@@ -15,6 +15,21 @@ struct Pokemon: Codable {
     var imageURL: String {
         
         let imgUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+        
+        
+        return imgUrl + idGetter() + ".png"
+    
+    }
+    
+    enum CodingKeys: CodingKey {
+        
+        case name
+        case url
+        
+    }
+    
+    func idGetter() -> String {
+        
         var id: String = ""
         var numberOfBars: Int = 0
         
@@ -35,15 +50,7 @@ struct Pokemon: Codable {
             }
             
         }
-        
-        return imgUrl + id.reversed() + ".png"
-    
-    }
-    
-    enum CodingKeys: CodingKey {
-        
-        case name
-        case url
-        
+        return String(id.reversed())
     }
 }
+

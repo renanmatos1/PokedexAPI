@@ -19,7 +19,8 @@ class HomeViewController: UIViewController {
         self.title = "Pokedex"
         getPokemonsApi()
         self.tableView.dataSource = self
-
+        
+    
     }
 
     func getPokemonsApi() {
@@ -46,7 +47,6 @@ class HomeViewController: UIViewController {
                             DispatchQueue.main.async {
                                 
                                 self.tableView.reloadData()
-//                                print(pokemon)
                             }
                             
                         } catch let error {
@@ -57,5 +57,19 @@ class HomeViewController: UIViewController {
             task.resume()
         }
     }
+    
+    @IBAction func tap(_ sender: PokemonGesture) {
+        
+            let storyBoard: UIStoryboard = UIStoryboard(name: "DetailScreen", bundle: nil)
+        
+            let detailScreen = storyBoard.instantiateViewController(withIdentifier: "secondScreen") as! DetailViewController
+        
+            detailScreen.id = sender.idPokemon
+            detailScreen.imagePokemon = sender.image
+        
+
+            self.navigationController?.pushViewController(detailScreen, animated: true)
+        
+        }
 }
 
